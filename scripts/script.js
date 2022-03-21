@@ -6,7 +6,7 @@ const precioPc = 1800000
 
 form.addEventListener('submit', (e) => {
     e.preventDefault()
-    if (cantPc.value == "" || cantPc.value == 0) {
+    if (cantPc.value == "" || cantPc.value == 0 || cantPc.value < 0) {
         Swal.fire({
             text: 'Verifique la cantidad ingresada',
             confirmButtonColor: "#BB2D3B"
